@@ -1,0 +1,183 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2 {
+  margin: 0;
+  font-weight: normal;
+}
+
+p {
+  margin: 0;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: 0.3;
+}
+a:hover {
+  opacity: 0.7;
+}
+
+.container {
+  margin: 0 16px;
+}
+
+header {
+  padding: 8px;
+}
+
+header form{
+  display: none;
+}
+
+header input,
+header button{
+  all: unset;
+}
+
+header input{
+  border: 2px solid blue;
+  padding: 4px;
+  width: 300px;
+}
+
+header button{
+  cursor: pointer;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header ul {
+  display: flex;
+  outline: 2px solid red;
+}
+
+header li a {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  text-align: center;
+}
+
+header li i {
+  font-size: 18px;
+}
+
+header li + li {
+  margin-left: 8px;
+}
+
+.hero img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.products {
+  padding: 80px 0;
+}
+
+.products ul {
+  margin-top: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.products li {
+  width: calc((100% - 16px) / 2);
+}
+
+.products li img {
+  width: 100%;
+}
+
+.products li h2 {
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+.products li a {
+  display: block;
+}
+
+.products .more{
+  display: block;
+  width: 70%;
+  line-height: 48px;
+  border: 2px solid red;
+  margin: 32px auto 0;
+  text-align: center;
+
+}
+
+footer{
+  background: skyblue;
+  padding: 16px 0;
+}
+
+footer .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer small{
+  font-size: 20px;
+}
+
+footer li i{
+  font-size: 24px;
+}
+
+footer ul{
+  display: flex;
+}
+
+footer li + li{
+  margin-left:  16px;
+}
+
+@media (min-width: 600px){
+  body{
+  }
+
+    .products li {
+      width: calc((100% - 32px) / 3);
+    }
+
+}
+
+@media (min-width: 800px){
+  body{
+  }
+
+  .container{
+    width: calc(100% - 32px);
+    margin: 0 auto;
+    max-width: 800px;
+  }
+
+  header form{
+    display: block;
+  }
+  
+}
